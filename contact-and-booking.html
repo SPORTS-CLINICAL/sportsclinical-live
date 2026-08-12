@@ -292,6 +292,10 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .enq .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .enq .sub{margin-top:10px;font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:15px;letter-spacing:.06em;background:var(--gold);color:var(--navy);border:none;border-radius:3px;padding:16px 38px;cursor:pointer}
 .enq .privacy-note{font-size:13.5px;color:var(--lightgrey);opacity:.85;margin-top:16px;font-weight:300}
+.enq-confirm[hidden]{display:none}
+.enq-confirm.err{background:rgba(200,136,77,.14);border-color:rgba(200,136,77,.6)}
+.enq-confirm a{color:var(--gold);font-weight:600}
+.enq .sub[disabled]{opacity:.55;cursor:default}
 .enq-confirm{background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.5);border-radius:4px;padding:16px 20px;margin-top:26px;color:var(--ivory);font-weight:300;font-size:16px}
 .findus{padding:82px 0;background:var(--ivory)}
 .findus-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start;margin-top:34px}
@@ -404,7 +408,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
     <h2>Send us an enquiry</h2>
     <p class="lead">Tell us what is going on and when you tend to be free. We coordinate each week around our patients, so the sooner we hear from you, the easier it is to fit you in.</p>
 
-    <form class="enq" action="#" method="POST" novalidate>
+    <form class="enq" id="enqForm" method="POST" novalidate>
       <input type="hidden" name="_subject" value="SPORTS CLINICAL Web Enquiry">
       <div class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
 
@@ -442,7 +446,8 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
         <label class="consent"><input type="checkbox" name="consent" value="Accepted" required> <span>I accept the <a href="terms-of-service">terms of service</a> and have read the <a href="privacy-notice">privacy notice</a>.</span></label>
       </div>
 
-      <button class="sub" type="submit">Submit</button>
+      <button class="sub" type="submit" id="enqBtn">Submit</button>
+      <div class="enq-confirm" id="enqMsg" role="status" aria-live="polite" hidden></div>
       <p class="privacy-note">We use your details only to respond to your enquiry and arrange your care. We never share them.</p>
     </form>
 
@@ -536,6 +541,51 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
     if(!e.target.closest('details.navitem')){closeAll(null);}
   });
   document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll(null);}});
+})();
+</script>
+<script>
+(function(){
+  var ENDPOINT='https://sc-enquiry.raspy-wave-f7a8.workers.dev';
+  var form=document.getElementById('enqForm');
+  if(!form) return;
+  var btn=document.getElementById('enqBtn');
+  var msg=document.getElementById('enqMsg');
+  var PHONE='<a href="tel:07773814488">07773 814488</a>';
+
+  function show(text,isError){
+    msg.innerHTML=text;
+    msg.className='enq-confirm'+(isError?' err':'');
+    msg.hidden=false;
+  }
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){form.reportValidity();return;}
+
+    btn.disabled=true;
+    var label=btn.textContent;
+    btn.textContent='Sending';
+    msg.hidden=true;
+
+    fetch(ENDPOINT,{method:'POST',body:new FormData(form)})
+      .then(function(r){return r.json().catch(function(){return {ok:r.ok};});})
+      .then(function(d){
+        if(d && d.ok){
+          form.reset();
+          show('Thank you. Your enquiry has been sent and we will come back to you as soon as we can. If your enquiry is urgent, please ring '+PHONE+'.',false);
+          btn.textContent='Sent';
+        }else{
+          show((d&&d.error?d.error:'We could not send that.')+' Please try again, or ring '+PHONE+'.',true);
+          btn.disabled=false;
+          btn.textContent=label;
+        }
+      })
+      .catch(function(){
+        show('We could not send that just now. Please ring '+PHONE+' or email <a href="mailto:info@sportsclinical.co.uk">info@sportsclinical.co.uk</a>.',true);
+        btn.disabled=false;
+        btn.textContent=label;
+      });
+  });
 })();
 </script>
 </body>
