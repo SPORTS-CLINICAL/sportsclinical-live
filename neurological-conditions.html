@@ -32,8 +32,10 @@
   "@type": "MedicalClinic",
   "@id": "https://www.sportsclinical.co.uk/#clinic",
   "name": "SPORTS CLINICAL",
-  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
+  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial and sports massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
   "url": "https://www.sportsclinical.co.uk",
+  "logo": "https://www.sportsclinical.co.uk/apple-touch-icon.png",
+  "image": "https://www.sportsclinical.co.uk/og-image.jpg",
   "telephone": "+44 7773 814488",
   "email": "info@sportsclinical.co.uk",
   "address": {
@@ -44,6 +46,12 @@
     "postalCode": "LN5 9HF",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.126642,
+    "longitude": -0.636987
+  },
+  "hasMap": "https://www.google.com/maps?q=53.126642,-0.636987",
   "areaServed": [
     "Lincoln",
     "Newark",
@@ -54,6 +62,82 @@
     "Nottinghamshire",
     "East Midlands"
   ],
+  "sameAs": [
+    "https://www.facebook.com/sportsclinical/",
+    "https://www.instagram.com/sports_clinical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Sports Therapy",
+          "url": "https://www.sportsclinical.co.uk/advanced-sports-therapy"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Remedial Massage",
+          "url": "https://www.sportsclinical.co.uk/clinical-remedial-massage",
+          "description": "Clinical remedial massage and sports massage: skilled, therapeutic massage to ease pain, restore balance and support recovery.",
+          "alternateName": "Sports Massage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pain & Injury Support",
+          "url": "https://www.sportsclinical.co.uk/pain-and-injury-support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Movement & Mobility Care",
+          "url": "https://www.sportsclinical.co.uk/movement-and-mobility-care"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Rehabilitation",
+          "url": "https://www.sportsclinical.co.uk/integrated-rehabilitation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance & Wellbeing",
+          "url": "https://www.sportsclinical.co.uk/performance-and-wellbeing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Lifestyle Medicine",
+          "url": "https://www.sportsclinical.co.uk/integrated-lifestyle-medicine"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Acupuncture",
+          "url": "https://www.sportsclinical.co.uk/medical-acupuncture"
+        }
+      }
+    ]
+  },
   "slogan": "Integrated care for movement, function and wellbeing at every stage of life"
 }
 </script>
@@ -254,7 +338,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   .mq-item{padding:0 16px;gap:8px}
   .mq-tile{height:64px;min-width:72px;padding:7px 10px}
   .mq-tile img{height:46px;max-width:130px}
-  .mq-name{font-size:11px;max-width:150px;min-height:50px}
+  .mq-name{font-size:12.5px;max-width:160px;min-height:56px}
 }
 
 /* RESTORE REGULATE OPTIMISE explainer */
@@ -279,7 +363,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .veil .eyebrow{color:var(--gold)}
 .veil h2{color:#fff}
 .veil p{color:var(--ivory);opacity:.94;font-weight:300;max-width:800px}
-</style>
+.eyebrow.eb-light{color:var(--navy)}.eyebrow.eb-light::after{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-top:10px}.privacy .eyebrow.eb-light::after{margin-left:auto;margin-right:auto}</style>
 </head>
 <body>
 <nav aria-label="Main">
@@ -352,7 +436,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
       <h1>Living with a neurological condition</h1>
       <p class="role">If you are living with a neurological condition, everyday movement can feel harder, less predictable, or simply more tiring than it used to be. We help with the physical side of that: supporting movement, balance, strength and comfort, and working alongside your GP and specialist team, never in place of them. Whatever your age or ability, you are welcome here.</p>
     </div>
-    <div class="phero-photo"><picture><source srcset="images/b07090457bfd14f4.webp" type="image/webp"><img src="images/b07090457bfd14f4.jpg" alt="A SPORTS CLINICAL practitioner supporting a patient through a guided shoulder movement in the clinic"></picture></div>
+    <div class="phero-photo"><picture><source srcset="images/49d538cc9cd4c10f.webp 800w, images/0cd2f7463b94947c.webp 1200w, images/3f10126bbf8ce655.webp 1600w, images/b07090457bfd14f4.webp 2048w" sizes="(max-width: 900px) 100vw, 48vw" type="image/webp"><img src="images/b07090457bfd14f4.jpg" srcset="images/fa8754fb42796837.jpg 800w, images/62cfe6be1d79d9da.jpg 1200w, images/7cc72b357ce1b889.jpg 1600w, images/b07090457bfd14f4.jpg 2048w" sizes="(max-width: 900px) 100vw, 48vw" alt="A SPORTS CLINICAL practitioner supporting a patient through a guided shoulder movement in the clinic"></picture></div>
   </div>
   <div class="gold-base"></div>
 </header>
@@ -361,7 +445,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
   <div class="wrap">
     <div class="bio-grid">
       <div>
-        <span class="eyebrow">Understanding it</span>
+        <span class="eyebrow eb-light">Understanding it</span>
         <h2 style="margin:14px 0 18px;font-size:clamp(24px,3vw,32px);font-weight:600">Helping with the movement side of things</h2>
         <p>A neurological condition affects how the brain and nerves send and receive signals, and that can show up in the body in many different ways: stiffness or weakness, altered sensation, tremor, tiredness, or trouble with balance and coordination. No two people experience it in quite the same way. What we focus on is how it affects your movement and your daily life, and how we can help make that side of things a little easier and more manageable.</p>
         <p>People come to us while living with a wide range of neurological conditions, including the after-effects of a stroke, multiple sclerosis, Parkinson's, nerve conditions and peripheral neuropathy, among many others. We do not treat the condition itself; that stays with your medical team. What we can support is its effect on the body: tight or overworked muscles, weakness, joint stiffness, changes in posture, and the balance and coordination that everyday movement relies on. Everything starts with an unhurried assessment, and care is shaped gently around you, at a pace that suits you, in step with the rest of your care.</p>
@@ -378,7 +462,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="expect">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What to expect</span>
+      <span class="eyebrow eb-light">What to expect</span>
       <h2>From first call to feeling better</h2>
     </div>
     <div class="expect-grid">
@@ -409,7 +493,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="route" style="background:#fff;padding:78px 0">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">The right care for this</span>
+      <span class="eyebrow eb-light">The right care for this</span>
       <h2>Where this usually leads</h2>
     </div>
     <div class="bio-grid">
@@ -429,7 +513,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 
 <section class="creds" style="background:var(--ivory)">
   <div class="wrap">
-    <span class="eyebrow">Reassurance</span>
+    <span class="eyebrow eb-light">Reassurance</span>
     <h2 style="margin:14px 0 18px;font-size:26px;font-weight:600">Safe, gentle, and at your pace</h2>
     <p>Everything is done with care and at a pace that suits you, and nothing is rushed or forced. The aim throughout is simple: that you feel in good hands, understood, and steadily better.</p>
   </div>
@@ -438,7 +522,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="svc">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What we help with</span>
+      <span class="eyebrow eb-light">What we help with</span>
       <h2>Other reasons people come to us</h2>
     </div>
     <p style="max-width:720px;font-weight:300;font-size:17.5px;margin-bottom:10px">A neurological condition is one of the reasons people come to us; if what you are dealing with looks a little different, one of these may fit better.</p>

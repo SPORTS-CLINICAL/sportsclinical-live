@@ -32,8 +32,10 @@
   "@type": "MedicalClinic",
   "@id": "https://www.sportsclinical.co.uk/#clinic",
   "name": "SPORTS CLINICAL",
-  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
+  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial and sports massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
   "url": "https://www.sportsclinical.co.uk",
+  "logo": "https://www.sportsclinical.co.uk/apple-touch-icon.png",
+  "image": "https://www.sportsclinical.co.uk/og-image.jpg",
   "telephone": "+44 7773 814488",
   "email": "info@sportsclinical.co.uk",
   "address": {
@@ -44,6 +46,12 @@
     "postalCode": "LN5 9HF",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.126642,
+    "longitude": -0.636987
+  },
+  "hasMap": "https://www.google.com/maps?q=53.126642,-0.636987",
   "areaServed": [
     "Lincoln",
     "Newark",
@@ -54,6 +62,82 @@
     "Nottinghamshire",
     "East Midlands"
   ],
+  "sameAs": [
+    "https://www.facebook.com/sportsclinical/",
+    "https://www.instagram.com/sports_clinical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Sports Therapy",
+          "url": "https://www.sportsclinical.co.uk/advanced-sports-therapy"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Remedial Massage",
+          "url": "https://www.sportsclinical.co.uk/clinical-remedial-massage",
+          "description": "Clinical remedial massage and sports massage: skilled, therapeutic massage to ease pain, restore balance and support recovery.",
+          "alternateName": "Sports Massage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pain & Injury Support",
+          "url": "https://www.sportsclinical.co.uk/pain-and-injury-support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Movement & Mobility Care",
+          "url": "https://www.sportsclinical.co.uk/movement-and-mobility-care"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Rehabilitation",
+          "url": "https://www.sportsclinical.co.uk/integrated-rehabilitation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance & Wellbeing",
+          "url": "https://www.sportsclinical.co.uk/performance-and-wellbeing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Lifestyle Medicine",
+          "url": "https://www.sportsclinical.co.uk/integrated-lifestyle-medicine"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Acupuncture",
+          "url": "https://www.sportsclinical.co.uk/medical-acupuncture"
+        }
+      }
+    ]
+  },
   "slogan": "Integrated care for movement, function and wellbeing at every stage of life"
 }
 </script>
@@ -249,7 +333,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   .mq-item{padding:0 16px;gap:8px}
   .mq-tile{height:64px;min-width:72px;padding:7px 10px}
   .mq-tile img{height:46px;max-width:130px}
-  .mq-name{font-size:11px;max-width:150px;min-height:50px}
+  .mq-name{font-size:12.5px;max-width:160px;min-height:56px}
 }
 
 /* RESTORE REGULATE OPTIMISE explainer */
@@ -269,7 +353,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 .veil .eyebrow{color:var(--gold)}
 .veil h2{color:#fff}
 .veil p{color:var(--ivory);opacity:.94;font-weight:300;max-width:800px}
-</style>
+.eyebrow.eb-light{color:var(--navy)}.eyebrow.eb-light::after{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-top:10px}.privacy .eyebrow.eb-light::after{margin-left:auto;margin-right:auto}</style>
 </head>
 <body>
 <nav aria-label="Main">
@@ -342,7 +426,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
       <h1>A more considered way of looking at the problem</h1>
       <p class="role">Many people arrive having already tried a few things. Some helped for a while, then faded; some never quite got to the bottom of it. That is usually a sign that the real driver was never found, only the symptom managed.</p>
     </div>
-    <div class="phero-photo"><img src="images/bc74308fae67d877.jpg" alt="Dean Haspey assessing a patient at SPORTS CLINICAL" style="object-position:center 30%"></div>
+    <div class="phero-photo"><img src="images/bc74308fae67d877.jpg" srcset="images/a34b9cbda334edca.jpg 800w, images/9e4e17604dce6bb8.jpg 1200w, images/bc74308fae67d877.jpg 1600w" sizes="(max-width: 900px) 100vw, 48vw" alt="Dean Haspey assessing a patient at SPORTS CLINICAL" style="object-position:center 30%"></div>
   </div>
   <div class="gold-base"></div>
 </header>
@@ -351,7 +435,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   <div class="wrap">
     <div class="bio-grid">
       <div>
-        <span class="eyebrow">The thinking</span>
+        <span class="eyebrow eb-light">The thinking</span>
         <h2 style="margin:14px 0 18px;font-size:clamp(24px,3vw,32px);font-weight:600">We treat the system, not just the sore spot</h2>
         <p>Pain and movement are not local events. The body works as one connected system, and how you move, brace, compensate and recover is coordinated by the nervous system reading and responding to everything at once. When something hurts or will not settle, the cause often sits some distance from where you feel it. So rather than treat the painful area in isolation, we assess how the whole system is working and look for what is genuinely behind the problem.</p>
       </div>
@@ -408,7 +492,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 
 <section class="creds" style="background:var(--ivory)">
   <div class="wrap">
-    <span class="eyebrow">Reassurance</span>
+    <span class="eyebrow eb-light">Reassurance</span>
     <h2 style="margin:14px 0 18px;font-size:26px;font-weight:600">Safe, gentle, and at your pace</h2>
     <p>Everything is done with care and at a pace that suits you, and nothing is rushed or forced. The aim throughout is simple: that you feel in good hands, understood, and steadily better.</p>
   </div>

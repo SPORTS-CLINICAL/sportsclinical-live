@@ -32,8 +32,10 @@
   "@type": "MedicalClinic",
   "@id": "https://www.sportsclinical.co.uk/#clinic",
   "name": "SPORTS CLINICAL",
-  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
+  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial and sports massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
   "url": "https://www.sportsclinical.co.uk",
+  "logo": "https://www.sportsclinical.co.uk/apple-touch-icon.png",
+  "image": "https://www.sportsclinical.co.uk/og-image.jpg",
   "telephone": "+44 7773 814488",
   "email": "info@sportsclinical.co.uk",
   "address": {
@@ -44,6 +46,12 @@
     "postalCode": "LN5 9HF",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.126642,
+    "longitude": -0.636987
+  },
+  "hasMap": "https://www.google.com/maps?q=53.126642,-0.636987",
   "areaServed": [
     "Lincoln",
     "Newark",
@@ -54,6 +62,82 @@
     "Nottinghamshire",
     "East Midlands"
   ],
+  "sameAs": [
+    "https://www.facebook.com/sportsclinical/",
+    "https://www.instagram.com/sports_clinical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Sports Therapy",
+          "url": "https://www.sportsclinical.co.uk/advanced-sports-therapy"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Remedial Massage",
+          "url": "https://www.sportsclinical.co.uk/clinical-remedial-massage",
+          "description": "Clinical remedial massage and sports massage: skilled, therapeutic massage to ease pain, restore balance and support recovery.",
+          "alternateName": "Sports Massage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pain & Injury Support",
+          "url": "https://www.sportsclinical.co.uk/pain-and-injury-support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Movement & Mobility Care",
+          "url": "https://www.sportsclinical.co.uk/movement-and-mobility-care"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Rehabilitation",
+          "url": "https://www.sportsclinical.co.uk/integrated-rehabilitation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance & Wellbeing",
+          "url": "https://www.sportsclinical.co.uk/performance-and-wellbeing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Lifestyle Medicine",
+          "url": "https://www.sportsclinical.co.uk/integrated-lifestyle-medicine"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Acupuncture",
+          "url": "https://www.sportsclinical.co.uk/medical-acupuncture"
+        }
+      }
+    ]
+  },
   "slogan": "Integrated care for movement, function and wellbeing at every stage of life"
 }
 </script>
@@ -254,7 +338,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   .mq-item{padding:0 16px;gap:8px}
   .mq-tile{height:64px;min-width:72px;padding:7px 10px}
   .mq-tile img{height:46px;max-width:130px}
-  .mq-name{font-size:11px;max-width:150px;min-height:50px}
+  .mq-name{font-size:12.5px;max-width:160px;min-height:56px}
 }
 
 /* RESTORE REGULATE OPTIMISE explainer */
@@ -279,7 +363,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .veil .eyebrow{color:var(--gold)}
 .veil h2{color:#fff}
 .veil p{color:var(--ivory);opacity:.94;font-weight:300;max-width:800px}
-</style>
+.eyebrow.eb-light{color:var(--navy)}.eyebrow.eb-light::after{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-top:10px}.privacy .eyebrow.eb-light::after{margin-left:auto;margin-right:auto}</style>
 </head>
 <body>
 <nav aria-label="Main">
@@ -352,7 +436,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
       <h1>Stress &amp; anxiety</h1>
       <p class="role">Stress is not just in your head. It lives in the body: tight shoulders, a clenched jaw, broken sleep, a system that never quite switches off. We help people of every age and walk of life calm that system down, gently and without judgement.</p>
     </div>
-    <div class="phero-photo"><img src="images/d1fe664750a391b8.jpg" alt="Calm, settled hands-on treatment at SPORTS CLINICAL"></div>
+    <div class="phero-photo"><img src="images/d1fe664750a391b8.jpg" srcset="images/02746935bd8b1ab5.jpg 800w, images/8e259227cd5cc1f6.jpg 1200w, images/836e4aaf8ba06834.jpg 1600w, images/d1fe664750a391b8.jpg 2048w" sizes="(max-width: 900px) 100vw, 48vw" alt="Calm, settled hands-on treatment at SPORTS CLINICAL"></div>
   </div>
   <div class="gold-base"></div>
 </header>
@@ -361,7 +445,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
   <div class="wrap">
     <div class="bio-grid">
       <div>
-        <span class="eyebrow">Understanding it</span>
+        <span class="eyebrow eb-light">Understanding it</span>
         <h2 style="margin:14px 0 18px;font-size:clamp(24px,3vw,32px);font-weight:600">How stress shows up in the body, in plain terms</h2>
         <p>When life asks too much for too long, the body's alarm system stays switched on. Muscles brace as if for impact, breathing turns shallow, sleep gets lighter, and everything aches and irritates more than it should. None of this is weakness and none of it is imagined: it is a protective system doing its job too well, and like any system stuck on high alert, it can be helped to settle.</p>
         <p>We see stress and anxiety in the body every day: tight necks and shoulders, jaw clenching and grinding, tension headaches, a tight chest and shallow breathing, an unsettled stomach, restless nights, flat energy, and aches that flare exactly when life is hardest. Sometimes there is a clear cause (work pressure, caring for others, illness, pain or loss) and sometimes there is no single reason at all. We look at how your body is holding it: breathing, posture, muscle guarding, sleep and energy, and shape care around calming the system: unhurried hands-on treatment, simple breathing and movement you can actually use, and realistic changes at your pace. We work alongside your GP or any other support you have, never instead of it.</p>
@@ -378,7 +462,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="expect">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What to expect</span>
+      <span class="eyebrow eb-light">What to expect</span>
       <h2>From first call to feeling better</h2>
     </div>
     <div class="expect-grid">
@@ -410,7 +494,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="route" style="background:#fff;padding:78px 0">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">The right care for this</span>
+      <span class="eyebrow eb-light">The right care for this</span>
       <h2>Where this usually leads</h2>
     </div>
     <div class="bio-grid">
@@ -430,7 +514,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 
 <section class="creds" style="background:var(--ivory)">
   <div class="wrap">
-    <span class="eyebrow">Reassurance</span>
+    <span class="eyebrow eb-light">Reassurance</span>
     <h2 style="margin:14px 0 18px;font-size:26px;font-weight:600">Safe, gentle, and at your pace</h2>
     <p>Everything is done with care and at a pace that suits you, and nothing is rushed or forced. The aim throughout is simple: that you feel in good hands, understood, and steadily better.</p>
   </div>
@@ -439,7 +523,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="svc">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What we help with</span>
+      <span class="eyebrow eb-light">What we help with</span>
       <h2>Other reasons people come to us</h2>
     </div>
     <p style="max-width:720px;font-weight:300;font-size:17.5px;margin-bottom:10px">Stress &amp; anxiety is one of the common problems we see; if yours looks a little different, one of these may fit better.</p>

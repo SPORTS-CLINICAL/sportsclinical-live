@@ -32,8 +32,10 @@
   "@type": "MedicalClinic",
   "@id": "https://www.sportsclinical.co.uk/#clinic",
   "name": "SPORTS CLINICAL",
-  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
+  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial and sports massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
   "url": "https://www.sportsclinical.co.uk",
+  "logo": "https://www.sportsclinical.co.uk/apple-touch-icon.png",
+  "image": "https://www.sportsclinical.co.uk/og-image.jpg",
   "telephone": "+44 7773 814488",
   "email": "info@sportsclinical.co.uk",
   "address": {
@@ -44,6 +46,12 @@
     "postalCode": "LN5 9HF",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.126642,
+    "longitude": -0.636987
+  },
+  "hasMap": "https://www.google.com/maps?q=53.126642,-0.636987",
   "areaServed": [
     "Lincoln",
     "Newark",
@@ -54,11 +62,88 @@
     "Nottinghamshire",
     "East Midlands"
   ],
+  "sameAs": [
+    "https://www.facebook.com/sportsclinical/",
+    "https://www.instagram.com/sports_clinical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Sports Therapy",
+          "url": "https://www.sportsclinical.co.uk/advanced-sports-therapy"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Remedial Massage",
+          "url": "https://www.sportsclinical.co.uk/clinical-remedial-massage",
+          "description": "Clinical remedial massage and sports massage: skilled, therapeutic massage to ease pain, restore balance and support recovery.",
+          "alternateName": "Sports Massage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pain & Injury Support",
+          "url": "https://www.sportsclinical.co.uk/pain-and-injury-support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Movement & Mobility Care",
+          "url": "https://www.sportsclinical.co.uk/movement-and-mobility-care"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Rehabilitation",
+          "url": "https://www.sportsclinical.co.uk/integrated-rehabilitation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance & Wellbeing",
+          "url": "https://www.sportsclinical.co.uk/performance-and-wellbeing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Lifestyle Medicine",
+          "url": "https://www.sportsclinical.co.uk/integrated-lifestyle-medicine"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Acupuncture",
+          "url": "https://www.sportsclinical.co.uk/medical-acupuncture"
+        }
+      }
+    ]
+  },
   "slogan": "Integrated care for movement, function and wellbeing at every stage of life"
 }
 </script>
 <link rel="preload" href="fonts/JosefinSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/JosefinSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+<style>:where(.hx3){font-size:1.17em;margin-block:1em}:where(.hx4){font-size:1em;margin-block:1.33em}</style>
 <style>
 @font-face{font-family:'Josefin Sans';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/JosefinSans-Light.woff2') format('woff2')}
 @font-face{font-family:'Josefin Sans';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/JosefinSans-Regular.woff2') format('woff2')}
@@ -80,7 +165,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Jost',sans-serif;font-weight:400;color:var(--charcoal);background:var(--ivory);line-height:1.7;font-size:17px}
-h1,h2,h3{font-family:'Josefin Sans',sans-serif;color:var(--navy)}
+h1,:is(h2:not(.hx),.hx2),:is(h3:not(.hx),.hx3){font-family:'Josefin Sans',sans-serif;color:var(--navy)}
 .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
 .eyebrow{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
 
@@ -140,20 +225,20 @@ nav.open .navmenu a.allof{margin-bottom:0}
 .bio-grid{display:grid;grid-template-columns:minmax(0,720px) 300px;gap:56px;justify-content:start}
 .bio p{font-size:18px;font-weight:300;margin-bottom:22px}
 .side{border-top:3px solid var(--gold);background:#fff;padding:26px 26px 28px;height:max-content}
-.side h3{font-size:16px;font-weight:600;letter-spacing:.06em;margin-bottom:14px}
+.side :is(h3:not(.hx),.hx3){font-size:16px;font-weight:600;letter-spacing:.06em;margin-bottom:14px}
 .side p{font-size:15px;font-weight:300;color:var(--grey);margin-bottom:14px}
 .side .tel2{font-family:'Josefin Sans',sans-serif;font-weight:600;color:var(--navy);text-decoration:none}
 /* band */
 .band{background:var(--navy);color:var(--ivory);padding:64px 0;position:relative;overflow:hidden}
 .band .ring{position:absolute;right:-160px;top:-160px;width:440px;height:440px;border:2px solid rgba(212,175,55,.22);border-radius:50%;border-bottom-color:transparent;border-left-color:transparent;pointer-events:none}
-.band h2{color:#fff;font-size:clamp(22px,3vw,30px);font-weight:600;margin-top:12px}
+.band :is(h2:not(.hx),.hx2){color:#fff;font-size:clamp(22px,3vw,30px);font-weight:600;margin-top:12px}
 .band p{font-weight:300;font-size:17.5px;color:var(--lightgrey);max-width:800px;margin-top:16px}
 /* credentials */
 .creds{padding:70px 0;background:#fff}
 .creds p{max-width:820px;font-weight:300;font-size:17px}
 /* cta */
 .cta{background:var(--navy);color:var(--ivory);text-align:center;padding:74px 0}
-.cta h2{color:#fff;font-size:clamp(24px,3.2vw,32px);font-weight:600}
+.cta :is(h2:not(.hx),.hx2){color:#fff;font-size:clamp(24px,3.2vw,32px);font-weight:600}
 .cta p{max-width:620px;margin:18px auto 30px;font-weight:300;font-size:17.5px;color:var(--lightgrey)}
 .btn{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:15px;letter-spacing:.06em;text-decoration:none;padding:15px 28px;border-radius:3px;display:inline-block;margin:0 8px}
 .btn-gold{background:var(--gold);color:var(--navy)}
@@ -200,7 +285,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 
 /* section heads */
 .sec-head{margin-bottom:38px}
-.sec-head h2{font-size:clamp(26px,3.4vw,36px);font-weight:600;margin-top:14px}
+.sec-head :is(h2:not(.hx),.hx2){font-size:clamp(26px,3.4vw,36px);font-weight:600;margin-top:14px}
 /* hero photo placeholder */
 .ph-placeholder{position:absolute;inset:0;background:linear-gradient(135deg,var(--navy-gradient),#0D1B2E);display:flex;align-items:center;justify-content:center}
 .ph-placeholder span{font-family:'Josefin Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(212,175,55,.75);border:1px dashed rgba(212,175,55,.45);border-radius:3px;padding:10px 16px;text-align:center;line-height:1.8;max-width:80%}
@@ -210,7 +295,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 .tcard{background:var(--ivory);border-top:3px solid var(--gold)}
 .tcard .tphoto{position:relative;height:500px;background:linear-gradient(135deg,var(--navy-gradient),#0D1B2E)}
 .tcard .tbody{padding:26px 28px 30px}
-.tcard h3{font-size:22px;font-weight:600}
+.tcard :is(h3:not(.hx),.hx3){font-size:22px;font-weight:600}
 .tcard .trole{font-family:'Josefin Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:8px 0 14px}
 .tcard p{font-size:16px;font-weight:300;color:var(--charcoal);margin-bottom:16px}
 .tcard a.more{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:.06em;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:2px}
@@ -219,12 +304,12 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 .expect{padding:78px 0}
 /* expect-navy: rhythm-break fallback while no veil photo exists (condition pages build copy-first) */
 .expect-navy{background:var(--navy);padding:96px 0}
-.expect-navy .sec-head h2{color:#fff}
-.expect-navy .exp h3{color:#fff}
+.expect-navy .sec-head :is(h2:not(.hx),.hx2){color:#fff}
+.expect-navy .exp :is(h3:not(.hx),.hx3){color:#fff}
 .expect-navy .exp p{color:var(--ivory);opacity:.92}
 .expect-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:6px}
-.exp h3{font-size:18px;font-weight:600;margin-bottom:10px}
-.exp h3::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px}
+.exp :is(h3:not(.hx),.hx3){font-size:18px;font-weight:600;margin-bottom:10px}
+.exp :is(h3:not(.hx),.hx3)::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px}
 .exp p{font-size:16px;font-weight:300}
 /* services pointer */
 .svc{padding:78px 0;background:#fff}
@@ -236,7 +321,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 /* trust strip */
 .trust{background:var(--navy);padding:72px 0}
 .trust .eyebrow{color:var(--gold)}
-.trust h2{color:var(--ivory)}
+.trust :is(h2:not(.hx),.hx2){color:var(--ivory)}
 .trust p.body{max-width:820px;font-weight:300;font-size:17px;color:var(--ivory);opacity:.92}
 .marquee{margin-top:36px;overflow:hidden;position:relative}
 .marquee-track{display:inline-flex;align-items:flex-start;white-space:nowrap}
@@ -253,17 +338,17 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   .mq-item{padding:0 16px;gap:8px}
   .mq-tile{height:64px;min-width:72px;padding:7px 10px}
   .mq-tile img{height:46px;max-width:130px}
-  .mq-name{font-size:11px;max-width:150px;min-height:50px}
+  .mq-name{font-size:12.5px;max-width:160px;min-height:56px}
 }
 
 /* RESTORE REGULATE OPTIMISE explainer */
 .rro{padding:78px 0;background:var(--navy);position:relative;overflow:hidden}
 .rro .ring2{position:absolute;left:-180px;bottom:-180px;width:480px;height:480px;border:2px solid rgba(212,175,55,.18);border-radius:50%;border-top-color:transparent;border-right-color:transparent;pointer-events:none}
 .rro .eyebrow{color:var(--gold)}
-.rro h2{color:var(--ivory)}
+.rro :is(h2:not(.hx),.hx2){color:var(--ivory)}
 .rro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:44px}
 .rro-item{border-top:3px solid var(--gold);padding-top:22px}
-.rro-item h3{font-family:'Josefin Sans',sans-serif;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.rro-item :is(h3:not(.hx),.hx3){font-family:'Josefin Sans',sans-serif;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
 .rro-item p{font-weight:300;font-size:16.5px;color:var(--lightgrey)}
 .rro-tag{margin-top:44px;text-align:center;font-family:'Josefin Sans',sans-serif;font-size:14px;font-weight:600;letter-spacing:.2em;color:var(--ivory);opacity:.85}
 @media (max-width:900px){.rro-grid{grid-template-columns:1fr;gap:30px}}
@@ -275,7 +360,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 The padding property is REQUIRED at the 180px canon (revised 10 July); omitting it collapses the band. Set Y so the wide-screen slice lands on meaningful content; run both pre-sign-off simulations.
 Do not port an old page's rule; see handover, dead-CSS lesson. */
 .veil .eyebrow{color:var(--gold)}
-.veil h2{color:#fff}
+.veil :is(h2:not(.hx),.hx2){color:#fff}
 .veil p{color:var(--ivory);opacity:.94;font-weight:300;max-width:800px}
 /* legal pages */
 .phero-legal .phero-grid{grid-template-columns:1fr}
@@ -283,9 +368,9 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .legal{padding:64px 0;background:#fff}
 .legal-alt{background:var(--ivory)}
 .legal-body{max-width:860px}
-.legal-body h3{font-size:20px;font-weight:600;margin:40px 0 12px}
-.legal-body h3::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px}
-.legal-body>h3:first-child{margin-top:0}
+.legal-body :is(h3:not(.hx),.hx3){font-size:20px;font-weight:600;margin:40px 0 12px}
+.legal-body :is(h3:not(.hx),.hx3)::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px}
+.legal-body>:is(h3:not(.hx),.hx3):first-child{margin-top:0}
 .legal-body p{font-size:16.5px;font-weight:300;margin-bottom:14px}
 .legal-body ul{margin:0 0 16px 22px}
 .legal-body li{font-size:16.5px;font-weight:300;margin-bottom:8px}
@@ -297,7 +382,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .ctrl-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0 10px}
 .ctrl{background:var(--ivory);border-top:3px solid var(--gold);padding:24px 26px}
 .legal-alt .ctrl{background:#fff}
-.ctrl h4{font-family:'Josefin Sans',sans-serif;font-size:17px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.ctrl :is(h4:not(.hx),.hx4){font-family:'Josefin Sans',sans-serif;font-size:17px;font-weight:600;color:var(--navy);margin-bottom:10px}
 .ctrl p{font-size:15.5px;margin-bottom:6px}
 .stamp{font-family:'Josefin Sans',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);border-top:1px solid var(--lightgrey);padding-top:20px;margin-top:44px}
 @media (max-width:900px){.ctrl-grid{grid-template-columns:1fr}}
@@ -330,7 +415,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .faq-item summary:hover{color:var(--gold)}
 .faq-a{padding:0 44px 24px 0}
 .faq-a p{font-size:16px;font-weight:300;line-height:1.65;margin:0}
-</style>
+.eyebrow.eb-light{color:var(--navy)}.eyebrow.eb-light::after{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-top:10px}.privacy .eyebrow.eb-light::after{margin-left:auto;margin-right:auto}</style>
 </head>
 <body>
 <nav aria-label="Main">
@@ -413,17 +498,17 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
     <div class="legal-body">
       <div class="keypoint"><p><strong>In short.</strong> We hold health records because we treat you. They stay on our own devices, encrypted, in the UK. We do not sell them, broker them or pass them to anyone else without your say so. We keep them for eight years after your care ends, because we have to. You can ask to see them at any time.</p></div>
 
-      <h3>Who holds your records</h3>
+      <h2 class="hx hx3">Who holds your records</h2>
       <p>SPORTS CLINICAL is a practice of two independent practitioners. Each of us is responsible in law for the records of our own patients, so <strong>the practitioner who treats you is the person who holds your record</strong> and the person to ask about it. If you are not sure which of us that is, ask either.</p>
       <div class="ctrl-grid">
         <div class="ctrl">
-          <h4>Dean Haspey</h4>
+          <h3 class="hx hx4">Dean Haspey</h3>
           <p>Trading as SPORTS CLINICAL. Data controller for his own patients.</p>
           <p>Telephone 07773 814488<br>Email info@sportsclinical.co.uk</p>
           <p>ICO registration number ZC200327</p>
         </div>
         <div class="ctrl">
-          <h4>Rebecca Gallop</h4>
+          <h3 class="hx hx4">Rebecca Gallop</h3>
           <p>A self-employed practitioner working under the SPORTS CLINICAL banner, and a separate, independent data controller for her own patients.</p>
           <p>Telephone 07791 214043<br>Email info@sportsclinical.co.uk</p>
           <p>ICO registration number ZC200947</p>
@@ -431,7 +516,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
       </div>
       <p>We are both at Default Blue House, 16 Torgate Lane, Bassingham, Lincoln, LN5 9HF. <strong>There are no other staff.</strong> Nobody else handles your information.</p>
 
-      <h3>What we collect</h3>
+      <h2 class="hx hx3">What we collect</h2>
       <p>Only what we need in order to look after you properly:</p>
       <ul>
         <li>Your name, address, telephone number, email address and date of birth</li>
@@ -444,22 +529,22 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
       </ul>
       <p>Your health information is what the law calls <strong>special category data</strong>, and it carries extra protection. We treat it accordingly.</p>
 
-      <h3>Why we use it, and the law we rely on</h3>
+      <h2 class="hx hx3">Why we use it, and the law we rely on</h2>
       <p>We use your information to assess you, treat you, plan your care, keep you safe, contact you about your appointments and invoice you for them.</p>
       <p>The lawful bases are <strong>Article 6(1)(b) of the UK GDPR</strong>, because processing is necessary to perform our contract with you, and, for your health information, <strong>Article 9(2)(h)</strong>, the provision of health care and treatment, together with Schedule 1, Part 1, paragraph 2 of the Data Protection Act 2018. That basis carries a duty of confidentiality, which we are bound by.</p>
       <div class="keypoint"><p><strong>We do not rely on your consent to hold your clinical record.</strong> This matters, and it is worth being plain about it. Consent that you have to give in order to be treated would not be freely given, and so would not be real consent. It would also mislead you, because it would imply that withdrawing it obliges us to delete your record, when in fact we are required to keep it for eight years. We use consent only where it genuinely is a choice, which means marketing, and photographs.</p></div>
 
-      <h3>Keeping in touch, and marketing</h3>
+      <h2 class="hx hx3">Keeping in touch, and marketing</h2>
       <p>We use your contact details to remind you about appointments, to send you exercises, plans or reports connected to your care, and to answer you when you get in touch. That is part of treating you, not marketing.</p>
       <p>Anything beyond that, such as practice news, we send <strong>only if you have asked for it</strong>. Making an enquiry is not the same as opting in, and we do not treat it as though it were. If you have opted in, you can stop it at any time by telling either of us. We do not sell or broker your details, ever.</p>
 
-      <h3>Where your records are kept</h3>
+      <h2 class="hx hx3">Where your records are kept</h2>
       <p>Your clinical record lives in our own clinic system, on our own devices, <strong>encrypted</strong>, here in the United Kingdom. It is not held in a third party cloud service, and no outside company stores or has access to it. Dean and Rebecca each hold their own patients&rsquo; records on their own device.</p>
       <p>Three things sit outside that. Email to and from the practice is handled by our email provider, in the UK. This website is hosted by a static hosting provider and holds no patient records at all. When you send the enquiry form on our contact page, the message is passed to us by Cloudflare, who route it straight to our inbox.</p>
       <p>We chose that route deliberately. Cloudflare passes the enquiry on and keeps no copy of it, so your message is not stored in anyone else&rsquo;s system, and there is no dashboard of past enquiries sitting somewhere waiting to be read. Once it reaches us it is treated like any other email to the practice. If you would rather not use the form at all, ring or email us instead and nothing passes through Cloudflare.</p>
 
       <p>One further thing sits outside the practice. The map on our contact page is drawn by OpenStreetMap, a not for profit mapping project. To draw it, your device asks their servers for the map tiles, which means they receive your IP address and the usual details your browser sends with any request. They set nothing on your device, they do not track you, and nothing about you is sent to us or to anyone else through the map. We chose OpenStreetMap over the commercial alternatives for exactly that reason. The map is the only part of this website that reaches outside our own hosting; every other image, font and file is served from the site itself.</p>
-<h3>Who else sees it</h3>
+<h2 class="hx hx3">Who else sees it</h2>
       <p>Nobody, in the ordinary course of things. We will share your information outside the practice only where:</p>
       <ul>
         <li>You ask us to, or agree to it, for example a report for your GP, consultant or insurer</li>
@@ -468,11 +553,11 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
         <li>We need advice from our own insurer or legal adviser about a claim or complaint</li>
       </ul>
 
-      <h3>How long we keep it</h3>
+      <h2 class="hx hx3">How long we keep it</h2>
       <p>We keep your clinical record for <strong>eight years</strong> after your last appointment with us, which is the standard expected of practitioners in our field and the period our insurers and professional bodies work to. For anyone treated as a child, we keep the record <strong>until their twenty-fifth birthday</strong>. After that it is deleted.</p>
       <p></p>
 
-      <h3>Your rights</h3>
+      <h2 class="hx hx3">Your rights</h2>
       <p>You can ask us to:</p>
       <ul>
         <li>Show you what we hold about you, and give you a copy</li>
@@ -485,16 +570,16 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
       <p>There is no charge, and we will respond within one month. Because your record is health information, we will ask you to prove who you are first: one piece of photographic identification, such as a passport or driving licence, together with something showing your address dated within the last three months. We are not being obstructive. We are making sure your health record does not go to somebody else.</p>
       <p>No decision about your care is ever made by an automated system. There is no profiling.</p>
 
-      <h3>If something goes wrong</h3>
+      <h2 class="hx hx3">If something goes wrong</h2>
       <p>If you think we have mishandled your information, <strong>tell us first</strong>. You have a right to complain directly to us under section 164A of the Data Protection Act 2018, and we would far rather hear about it. Contact whichever of us holds your record, using the details above. We will acknowledge your complaint within thirty days, look into it properly, keep you posted and tell you the outcome and how we reached it.</p>
       <p>If you are not satisfied, or you would rather go straight there, you can complain to the Information Commissioner&rsquo;s Office at any time. That right is yours regardless of anything we say or do.</p>
       <p>Information Commissioner&rsquo;s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF. Telephone 0303 123 1113. <a href="https://ico.org.uk">ico.org.uk</a></p>
       <p>A complaint about your <em>care</em> rather than your information is a different thing, and there is a procedure for it in our Terms.</p>
 
-      <h3>Cookies</h3>
+      <h2 class="hx hx3">Cookies</h2>
       <p>This website is deliberately plain. We explain exactly what it does, and what choice you have, in our <a href="cookie-notice">Cookie notice</a>.</p>
 
-      <h3>Changes to this notice</h3>
+      <h2 class="hx hx3">Changes to this notice</h2>
       <p>If we change how we handle your information, we will change this notice and update the date below. If the change is significant, and it affects patients we are still treating, we will tell you rather than leave you to find it.</p>
 
       <p class="stamp">Version 1.1 &middot; Last updated 17 August 2026</p>

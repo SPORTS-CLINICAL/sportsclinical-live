@@ -32,8 +32,10 @@
   "@type": "MedicalClinic",
   "@id": "https://www.sportsclinical.co.uk/#clinic",
   "name": "SPORTS CLINICAL",
-  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
+  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial and sports massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
   "url": "https://www.sportsclinical.co.uk",
+  "logo": "https://www.sportsclinical.co.uk/apple-touch-icon.png",
+  "image": "https://www.sportsclinical.co.uk/og-image.jpg",
   "telephone": "+44 7773 814488",
   "email": "info@sportsclinical.co.uk",
   "address": {
@@ -44,6 +46,12 @@
     "postalCode": "LN5 9HF",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.126642,
+    "longitude": -0.636987
+  },
+  "hasMap": "https://www.google.com/maps?q=53.126642,-0.636987",
   "areaServed": [
     "Lincoln",
     "Newark",
@@ -54,11 +62,88 @@
     "Nottinghamshire",
     "East Midlands"
   ],
+  "sameAs": [
+    "https://www.facebook.com/sportsclinical/",
+    "https://www.instagram.com/sports_clinical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Sports Therapy",
+          "url": "https://www.sportsclinical.co.uk/advanced-sports-therapy"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Remedial Massage",
+          "url": "https://www.sportsclinical.co.uk/clinical-remedial-massage",
+          "description": "Clinical remedial massage and sports massage: skilled, therapeutic massage to ease pain, restore balance and support recovery.",
+          "alternateName": "Sports Massage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pain & Injury Support",
+          "url": "https://www.sportsclinical.co.uk/pain-and-injury-support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Movement & Mobility Care",
+          "url": "https://www.sportsclinical.co.uk/movement-and-mobility-care"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Rehabilitation",
+          "url": "https://www.sportsclinical.co.uk/integrated-rehabilitation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance & Wellbeing",
+          "url": "https://www.sportsclinical.co.uk/performance-and-wellbeing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Lifestyle Medicine",
+          "url": "https://www.sportsclinical.co.uk/integrated-lifestyle-medicine"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Acupuncture",
+          "url": "https://www.sportsclinical.co.uk/medical-acupuncture"
+        }
+      }
+    ]
+  },
   "slogan": "Integrated care for movement, function and wellbeing at every stage of life"
 }
 </script>
 <link rel="preload" href="fonts/JosefinSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/JosefinSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+<style>:where(.hx3){font-size:1.17em;margin-block:1em}</style>
 <style>
 @font-face{font-family:'Josefin Sans';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/JosefinSans-Light.woff2') format('woff2')}
 @font-face{font-family:'Josefin Sans';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/JosefinSans-Regular.woff2') format('woff2')}
@@ -80,7 +165,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Jost',sans-serif;font-weight:400;color:var(--charcoal);background:var(--ivory);line-height:1.7;font-size:17px}
-h1,h2,h3{font-family:'Josefin Sans',sans-serif;color:var(--navy)}
+h1,:is(h2:not(.hx),.hx2),:is(h3:not(.hx),.hx3){font-family:'Josefin Sans',sans-serif;color:var(--navy)}
 .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
 .eyebrow{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
 
@@ -140,20 +225,20 @@ nav.open .navmenu a.allof{margin-bottom:0}
 .bio-grid{display:grid;grid-template-columns:minmax(0,720px) 300px;gap:56px;justify-content:start}
 .bio p{font-size:18px;font-weight:300;margin-bottom:22px}
 .side{border-top:3px solid var(--gold);background:#fff;padding:26px 26px 28px;height:max-content}
-.side h3{font-size:16px;font-weight:600;letter-spacing:.06em;margin-bottom:14px}
+.side :is(h3:not(.hx),.hx3){font-size:16px;font-weight:600;letter-spacing:.06em;margin-bottom:14px}
 .side p{font-size:15px;font-weight:300;color:var(--grey);margin-bottom:14px}
 .side .tel2{font-family:'Josefin Sans',sans-serif;font-weight:600;color:var(--navy);text-decoration:none}
 /* band */
 .band{background:var(--navy);color:var(--ivory);padding:64px 0;position:relative;overflow:hidden}
 .band .ring{position:absolute;right:-160px;top:-160px;width:440px;height:440px;border:2px solid rgba(212,175,55,.22);border-radius:50%;border-bottom-color:transparent;border-left-color:transparent;pointer-events:none}
-.band h2{color:#fff;font-size:clamp(22px,3vw,30px);font-weight:600;margin-top:12px}
+.band :is(h2:not(.hx),.hx2){color:#fff;font-size:clamp(22px,3vw,30px);font-weight:600;margin-top:12px}
 .band p{font-weight:300;font-size:17.5px;color:var(--lightgrey);max-width:800px;margin-top:16px}
 /* credentials */
 .creds{padding:70px 0;background:#fff}
 .creds p{max-width:820px;font-weight:300;font-size:17px}
 /* cta */
 .cta{background:var(--navy);color:var(--ivory);text-align:center;padding:74px 0}
-.cta h2{color:#fff;font-size:clamp(24px,3.2vw,32px);font-weight:600}
+.cta :is(h2:not(.hx),.hx2){color:#fff;font-size:clamp(24px,3.2vw,32px);font-weight:600}
 .cta p{max-width:620px;margin:18px auto 30px;font-weight:300;font-size:17.5px;color:var(--lightgrey)}
 .btn{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:15px;letter-spacing:.06em;text-decoration:none;padding:15px 28px;border-radius:3px;display:inline-block;margin:0 8px}
 .btn-gold{background:var(--gold);color:var(--navy)}
@@ -200,7 +285,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 
 /* section heads */
 .sec-head{margin-bottom:38px}
-.sec-head h2{font-size:clamp(26px,3.4vw,36px);font-weight:600;margin-top:14px}
+.sec-head :is(h2:not(.hx),.hx2){font-size:clamp(26px,3.4vw,36px);font-weight:600;margin-top:14px}
 /* hero photo placeholder */
 .ph-placeholder{position:absolute;inset:0;background:linear-gradient(135deg,var(--navy-gradient),#0D1B2E);display:flex;align-items:center;justify-content:center}
 .ph-placeholder span{font-family:'Josefin Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(212,175,55,.75);border:1px dashed rgba(212,175,55,.45);border-radius:3px;padding:10px 16px;text-align:center;line-height:1.8;max-width:80%}
@@ -210,7 +295,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 .tcard{background:var(--ivory);border-top:3px solid var(--gold)}
 .tcard .tphoto{position:relative;height:500px;background:linear-gradient(135deg,var(--navy-gradient),#0D1B2E)}
 .tcard .tbody{padding:26px 28px 30px}
-.tcard h3{font-size:22px;font-weight:600}
+.tcard :is(h3:not(.hx),.hx3){font-size:22px;font-weight:600}
 .tcard .trole{font-family:'Josefin Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:8px 0 14px}
 .tcard p{font-size:16px;font-weight:300;color:var(--charcoal);margin-bottom:16px}
 .tcard a.more{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:.06em;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:2px}
@@ -219,12 +304,12 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 .expect{padding:78px 0}
 /* expect-navy: rhythm-break fallback while no veil photo exists (condition pages build copy-first) */
 .expect-navy{background:var(--navy);padding:96px 0}
-.expect-navy .sec-head h2{color:#fff}
-.expect-navy .exp h3{color:#fff}
+.expect-navy .sec-head :is(h2:not(.hx),.hx2){color:#fff}
+.expect-navy .exp :is(h3:not(.hx),.hx3){color:#fff}
 .expect-navy .exp p{color:var(--ivory);opacity:.92}
 .expect-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:6px}
-.exp h3{font-size:18px;font-weight:600;margin-bottom:10px}
-.exp h3::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px}
+.exp :is(h3:not(.hx),.hx3){font-size:18px;font-weight:600;margin-bottom:10px}
+.exp :is(h3:not(.hx),.hx3)::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px}
 .exp p{font-size:16px;font-weight:300}
 /* services pointer */
 .svc{padding:78px 0;background:#fff}
@@ -236,7 +321,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 /* trust strip */
 .trust{background:var(--navy);padding:72px 0}
 .trust .eyebrow{color:var(--gold)}
-.trust h2{color:var(--ivory)}
+.trust :is(h2:not(.hx),.hx2){color:var(--ivory)}
 .trust p.body{max-width:820px;font-weight:300;font-size:17px;color:var(--ivory);opacity:.92}
 .marquee{margin-top:36px;overflow:hidden;position:relative}
 .marquee-track{display:inline-flex;align-items:flex-start;white-space:nowrap}
@@ -253,17 +338,17 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   .mq-item{padding:0 16px;gap:8px}
   .mq-tile{height:64px;min-width:72px;padding:7px 10px}
   .mq-tile img{height:46px;max-width:130px}
-  .mq-name{font-size:11px;max-width:150px;min-height:50px}
+  .mq-name{font-size:12.5px;max-width:160px;min-height:56px}
 }
 
 /* RESTORE REGULATE OPTIMISE explainer */
 .rro{padding:78px 0;background:var(--navy);position:relative;overflow:hidden}
 .rro .ring2{position:absolute;left:-180px;bottom:-180px;width:480px;height:480px;border:2px solid rgba(212,175,55,.18);border-radius:50%;border-top-color:transparent;border-right-color:transparent;pointer-events:none}
 .rro .eyebrow{color:var(--gold)}
-.rro h2{color:var(--ivory)}
+.rro :is(h2:not(.hx),.hx2){color:var(--ivory)}
 .rro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:44px}
 .rro-item{border-top:3px solid var(--gold);padding-top:22px}
-.rro-item h3{font-family:'Josefin Sans',sans-serif;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.rro-item :is(h3:not(.hx),.hx3){font-family:'Josefin Sans',sans-serif;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
 .rro-item p{font-weight:300;font-size:16.5px;color:var(--lightgrey)}
 .rro-tag{margin-top:44px;text-align:center;font-family:'Josefin Sans',sans-serif;font-size:14px;font-weight:600;letter-spacing:.2em;color:var(--ivory);opacity:.85}
 @media (max-width:900px){.rro-grid{grid-template-columns:1fr;gap:30px}}
@@ -275,7 +360,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 The padding property is REQUIRED at the 180px canon (revised 10 July); omitting it collapses the band. Set Y so the wide-screen slice lands on meaningful content; run both pre-sign-off simulations.
 Do not port an old page's rule; see handover, dead-CSS lesson. */
 .veil .eyebrow{color:var(--gold)}
-.veil h2{color:#fff}
+.veil :is(h2:not(.hx),.hx2){color:#fff}
 .veil p{color:var(--ivory);opacity:.94;font-weight:300;max-width:800px}
 /* legal pages */
 .phero-legal .phero-grid{grid-template-columns:1fr}
@@ -283,9 +368,9 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .legal{padding:64px 0;background:#fff}
 .legal-alt{background:var(--ivory)}
 .legal-body{max-width:860px}
-.legal-body h3{font-size:20px;font-weight:600;margin:40px 0 12px}
-.legal-body h3::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px}
-.legal-body>h3:first-child{margin-top:0}
+.legal-body :is(h3:not(.hx),.hx3){font-size:20px;font-weight:600;margin:40px 0 12px}
+.legal-body :is(h3:not(.hx),.hx3)::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:10px}
+.legal-body>:is(h3:not(.hx),.hx3):first-child{margin-top:0}
 .legal-body p{font-size:16.5px;font-weight:300;margin-bottom:14px}
 .legal-body ul{margin:0 0 16px 22px}
 .legal-body li{font-size:16.5px;font-weight:300;margin-bottom:8px}
@@ -330,7 +415,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .faq-item summary:hover{color:var(--gold)}
 .faq-a{padding:0 44px 24px 0}
 .faq-a p{font-size:16px;font-weight:300;line-height:1.65;margin:0}
-</style>
+.eyebrow.eb-light{color:var(--navy)}.eyebrow.eb-light::after{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-top:10px}.privacy .eyebrow.eb-light::after{margin-left:auto;margin-right:auto}</style>
 </head>
 <body>
 <nav aria-label="Main">
@@ -413,39 +498,39 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
     <div class="legal-body">
       <div class="keypoint"><p><strong>In short.</strong> As this site is built today, it stores nothing on your device and there is nothing for you to accept or refuse. If that changes, you will see a banner, it will let you say no as easily as yes, and nothing beyond the bare essentials will run until you have chosen.</p></div>
 
-      <h3>What a cookie actually is</h3>
+      <h2 class="hx hx3">What a cookie actually is</h2>
       <p>A small file a website leaves on your device so it can recognise it later. Some are harmless and necessary. Others follow you around. The word covers a family of similar things: tags, pixels, scripts, local storage. We mean all of them here.</p>
 
-      <h3>What this site does</h3>
+      <h2 class="hx hx3">What this site does</h2>
       <p>We built this website deliberately plain. No live social feeds, no embedded review widgets, no fonts fetched from someone else&rsquo;s server, no chat box, no tracking for its own sake. The result is a site that, as it stands, <strong>sets no cookies at all</strong>.</p>
       <p>We would like to keep it that way. We are being honest with you, though: we advertise, and advertising needs measurement to be worth doing. If we add anything, this page changes first, and the banner appears with it.</p>
       <p></p>
 
-      <h3>The three kinds, and what you get to decide</h3>
+      <h2 class="hx hx3">The three kinds, and what you get to decide</h2>
       <p><strong>Essential.</strong> The handful of things a website cannot work without: keeping it secure, remembering the choice you made on the banner. These have no alternative, so there is no choice to offer, and we keep them to the minimum.</p>
       <p><strong>Measurement, if we add it.</strong> Counting visits and which pages people read, so we can tell what is useful and what is not. Under the rules that changed in February 2026, this no longer needs your permission first, <em>provided</em> the numbers are only ever used by us to improve the site, and never to identify you, follow you or feed advertising. Even then we owe you a plain explanation and a free, easy way to say no. <strong>You can opt out whenever you like</strong>, and it takes one click, not a trek through a settings menu.</p>
       <p><strong>Advertising, if we add it.</strong> This is different, and the law treats it differently. If we ever measure which adverts brought people here, that needs your <strong>active permission first</strong>. Nothing of that kind will run until you have given it. Refusing costs you nothing, changes nothing about the site, and we will not ask you again and again.</p>
 
-      <h3>The banner, if you see one</h3>
+      <h2 class="hx hx3">The banner, if you see one</h2>
       <p>It will do what a banner should. <strong>Reject will be as easy to find and as easy to press as accept.</strong> Nothing non-essential fires before you choose. There is no pre-ticked box, no path that makes refusing tiring, no reading the small print to find the no. If we cannot advertise without dark patterns, we will do without.</p>
       <p>Changed your mind? Come back to this page and change it. There is no penalty and we do not treat it as a decision about you.</p>
 
-      <h3>Other people&rsquo;s cookies</h3>
+      <h2 class="hx hx3">Other people&rsquo;s cookies</h2>
       <p>If we add advertising measurement, it will be Google&rsquo;s, and some information would go to Google, including outside the UK. That would only ever happen with your permission. We would name it here, in this page, before it happened.</p>
       <p>Where we link out to another site, that site sets its own cookies under its own rules, and we have no say in it. A link is not an endorsement.</p>
 <p>One thing on this site does load from elsewhere, and we would rather name it than let you find it. The map on our contact page is drawn by OpenStreetMap, a not for profit mapping project, and drawing it means your device asks their servers for the map tiles. They set nothing on your device, so there is still nothing here for you to accept or refuse, and there is still no banner. They do receive your IP address, because any request to any server carries one. We chose OpenStreetMap over the commercial mapping services for exactly this reason. Our <a href="privacy-notice">Privacy notice</a> sets out what that means in full.</p>
 
 
-      <h3>Your browser</h3>
+      <h2 class="hx hx3">Your browser</h2>
       <p>Every browser lets you block or delete cookies, and you are welcome to. We mention this because it is useful, <strong>not</strong> as a substitute for asking you. Older privacy policies, ours included, used to tell people to go and change their browser settings and treated that as agreement. It never really was, and we are not doing it.</p>
 
-      <h3>None of this touches your health record</h3>
+      <h2 class="hx hx3">None of this touches your health record</h2>
       <p>Worth saying plainly. Your clinical record is not on this website and never has been. It lives in our own system, encrypted, on our own devices. No website visitor, no advertiser and no analytics tool can reach it, because it is not there to reach. How we look after it is set out in our <a href="privacy-notice">Privacy notice</a>.</p>
 
-      <h3>Changes</h3>
+      <h2 class="hx hx3">Changes</h2>
       <p>If we add anything to this site that stores something on your device, we will update this page before we switch it on, not afterwards, and the banner will appear at the same time.</p>
 
-      <h3>Asking us about it</h3>
+      <h2 class="hx hx3">Asking us about it</h2>
       <p>Contact Dean on 07773 814488 or info@sportsclinical.co.uk. If you think we have got this wrong, tell us: there is a formal route in our <a href="privacy-notice">Privacy notice</a>, and you can go to the Information Commissioner&rsquo;s Office at any time.</p>
 
       <p class="stamp">Version 1.1 &middot; Last updated 17 August 2026</p>

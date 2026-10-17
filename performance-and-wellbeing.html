@@ -32,8 +32,10 @@
   "@type": "MedicalClinic",
   "@id": "https://www.sportsclinical.co.uk/#clinic",
   "name": "SPORTS CLINICAL",
-  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
+  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial and sports massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
   "url": "https://www.sportsclinical.co.uk",
+  "logo": "https://www.sportsclinical.co.uk/apple-touch-icon.png",
+  "image": "https://www.sportsclinical.co.uk/og-image.jpg",
   "telephone": "+44 7773 814488",
   "email": "info@sportsclinical.co.uk",
   "address": {
@@ -44,6 +46,12 @@
     "postalCode": "LN5 9HF",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.126642,
+    "longitude": -0.636987
+  },
+  "hasMap": "https://www.google.com/maps?q=53.126642,-0.636987",
   "areaServed": [
     "Lincoln",
     "Newark",
@@ -54,6 +62,82 @@
     "Nottinghamshire",
     "East Midlands"
   ],
+  "sameAs": [
+    "https://www.facebook.com/sportsclinical/",
+    "https://www.instagram.com/sports_clinical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Sports Therapy",
+          "url": "https://www.sportsclinical.co.uk/advanced-sports-therapy"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Remedial Massage",
+          "url": "https://www.sportsclinical.co.uk/clinical-remedial-massage",
+          "description": "Clinical remedial massage and sports massage: skilled, therapeutic massage to ease pain, restore balance and support recovery.",
+          "alternateName": "Sports Massage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pain & Injury Support",
+          "url": "https://www.sportsclinical.co.uk/pain-and-injury-support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Movement & Mobility Care",
+          "url": "https://www.sportsclinical.co.uk/movement-and-mobility-care"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Rehabilitation",
+          "url": "https://www.sportsclinical.co.uk/integrated-rehabilitation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance & Wellbeing",
+          "url": "https://www.sportsclinical.co.uk/performance-and-wellbeing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Lifestyle Medicine",
+          "url": "https://www.sportsclinical.co.uk/integrated-lifestyle-medicine"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Acupuncture",
+          "url": "https://www.sportsclinical.co.uk/medical-acupuncture"
+        }
+      }
+    ]
+  },
   "slogan": "Integrated care for movement, function and wellbeing at every stage of life"
 }
 </script>
@@ -249,7 +333,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   .mq-item{padding:0 16px;gap:8px}
   .mq-tile{height:64px;min-width:72px;padding:7px 10px}
   .mq-tile img{height:46px;max-width:130px}
-  .mq-name{font-size:11px;max-width:150px;min-height:50px}
+  .mq-name{font-size:12.5px;max-width:160px;min-height:56px}
 }
 
 /* RESTORE REGULATE OPTIMISE explainer */
@@ -270,7 +354,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 .veil .eyebrow{color:var(--gold)}
 .veil h2{color:#fff}
 .veil p{color:var(--ivory);opacity:.94;font-weight:300;max-width:800px}
-</style>
+.eyebrow.eb-light{color:var(--navy)}.eyebrow.eb-light::after{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-top:10px}.privacy .eyebrow.eb-light::after{margin-left:auto;margin-right:auto}</style>
 </head>
 <body>
 <nav aria-label="Main">
@@ -343,7 +427,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
       <h1>Feel well, function well, perform at your best</h1>
       <p class="role">For people who are not injured but want more from their body and their life: more energy, more resilience, more capability, regardless of age or ability, built on how you move and how you live.</p>
     </div>
-    <div class="phero-photo"><picture><source srcset="images/0786c04b8e74bf01.webp" type="image/webp"><img src="images/0786c04b8e74bf01.jpg" alt="Reviewing progress outdoors with SPORTS CLINICAL"></picture></div>
+    <div class="phero-photo"><picture><source srcset="images/2bd7ee446aecd44e.webp 800w, images/ba52a2a9060498df.webp 1200w, images/73c20fb3b98d921e.webp 1600w, images/0786c04b8e74bf01.webp 2048w" sizes="(max-width: 900px) 100vw, 48vw" type="image/webp"><img src="images/0786c04b8e74bf01.jpg" srcset="images/85bdabe0be14f050.jpg 800w, images/061de7dccdcc1ab7.jpg 1200w, images/6616ab55f9eb310e.jpg 1600w, images/0786c04b8e74bf01.jpg 2048w" sizes="(max-width: 900px) 100vw, 48vw" alt="Reviewing progress outdoors with SPORTS CLINICAL"></picture></div>
   </div>
   <div class="gold-base"></div>
 </header>
@@ -352,7 +436,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   <div class="wrap">
     <div class="bio-grid">
       <div>
-        <span class="eyebrow">What it's for</span>
+        <span class="eyebrow eb-light">What it's for</span>
         <h2 style="margin:14px 0 18px;font-size:clamp(24px,3vw,32px);font-weight:600">The whole of you, not just the training</h2>
         <p>Performance &amp; Wellbeing is for people who are not broken but want to be better, regardless of age or ability: athletes chasing an edge, people returning to activity after years away, and anyone who simply wants to move, sleep and feel better for longer. Performance here means whatever matters to you, from a personal best to a full day on your feet with energy to spare.</p>
         <p>Every session starts with a considered assessment that looks wider than muscles and joints: how you move, but also how you sleep, eat, recover, manage pressure and connect with the life around you, because those foundations decide how far the physical work can take you. From there we build a plan that develops both sides together, reviewed and adjusted as you progress.</p>
@@ -369,7 +453,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 <section class="expect">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What to expect</span>
+      <span class="eyebrow eb-light">What to expect</span>
       <h2>What Performance &amp; Wellbeing involves</h2>
     </div>
     <div class="expect-grid">
@@ -399,7 +483,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 
 <section class="creds" style="background:var(--ivory)">
   <div class="wrap">
-    <span class="eyebrow">Reassurance</span>
+    <span class="eyebrow eb-light">Reassurance</span>
     <h2 style="margin:14px 0 18px;font-size:26px;font-weight:600">Safe, gentle, and at your pace</h2>
     <p>Everything is done with care and at a pace that suits you, and nothing is rushed or forced. The aim throughout is simple: that you feel in good hands, understood, and steadily better.</p>
   </div>
@@ -408,7 +492,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 <section class="svc">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">How we help</span>
+      <span class="eyebrow eb-light">How we help</span>
       <h2>Part of a wider range of connected care</h2>
     </div>
     <p style="max-width:720px;font-weight:300;font-size:17.5px;margin-bottom:10px">Performance &amp; Wellbeing is one of eight connected services, matched to you rather than delivered from a fixed menu.</p>

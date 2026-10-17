@@ -32,8 +32,10 @@
   "@type": "MedicalClinic",
   "@id": "https://www.sportsclinical.co.uk/#clinic",
   "name": "SPORTS CLINICAL",
-  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
+  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial and sports massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
   "url": "https://www.sportsclinical.co.uk",
+  "logo": "https://www.sportsclinical.co.uk/apple-touch-icon.png",
+  "image": "https://www.sportsclinical.co.uk/og-image.jpg",
   "telephone": "+44 7773 814488",
   "email": "info@sportsclinical.co.uk",
   "address": {
@@ -44,6 +46,12 @@
     "postalCode": "LN5 9HF",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.126642,
+    "longitude": -0.636987
+  },
+  "hasMap": "https://www.google.com/maps?q=53.126642,-0.636987",
   "areaServed": [
     "Lincoln",
     "Newark",
@@ -54,6 +62,82 @@
     "Nottinghamshire",
     "East Midlands"
   ],
+  "sameAs": [
+    "https://www.facebook.com/sportsclinical/",
+    "https://www.instagram.com/sports_clinical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Sports Therapy",
+          "url": "https://www.sportsclinical.co.uk/advanced-sports-therapy"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Remedial Massage",
+          "url": "https://www.sportsclinical.co.uk/clinical-remedial-massage",
+          "description": "Clinical remedial massage and sports massage: skilled, therapeutic massage to ease pain, restore balance and support recovery.",
+          "alternateName": "Sports Massage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pain & Injury Support",
+          "url": "https://www.sportsclinical.co.uk/pain-and-injury-support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Movement & Mobility Care",
+          "url": "https://www.sportsclinical.co.uk/movement-and-mobility-care"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Rehabilitation",
+          "url": "https://www.sportsclinical.co.uk/integrated-rehabilitation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance & Wellbeing",
+          "url": "https://www.sportsclinical.co.uk/performance-and-wellbeing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Lifestyle Medicine",
+          "url": "https://www.sportsclinical.co.uk/integrated-lifestyle-medicine"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Acupuncture",
+          "url": "https://www.sportsclinical.co.uk/medical-acupuncture"
+        }
+      }
+    ]
+  },
   "slogan": "Integrated care for movement, function and wellbeing at every stage of life"
 }
 </script>
@@ -254,7 +338,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   .mq-item{padding:0 16px;gap:8px}
   .mq-tile{height:64px;min-width:72px;padding:7px 10px}
   .mq-tile img{height:46px;max-width:130px}
-  .mq-name{font-size:11px;max-width:150px;min-height:50px}
+  .mq-name{font-size:12.5px;max-width:160px;min-height:56px}
 }
 
 /* RESTORE REGULATE OPTIMISE explainer */
@@ -279,7 +363,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 .veil .eyebrow{color:var(--gold)}
 .veil h2{color:#fff}
 .veil p{color:var(--ivory);opacity:.94;font-weight:300;max-width:800px}
-</style>
+.eyebrow.eb-light{color:var(--navy)}.eyebrow.eb-light::after{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-top:10px}.privacy .eyebrow.eb-light::after{margin-left:auto;margin-right:auto}</style>
 </head>
 <body>
 <nav aria-label="Main">
@@ -352,7 +436,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
       <h1>Recovery and rehabilitation, at your pace</h1>
       <p class="role">Recovery and rehabilitation is about getting you back to the things you do, comfortably and with confidence. Whether you are recovering from surgery, an injury, a fracture or a sprain, or simply a long spell of being less active, we help you rebuild strength, movement and confidence at a pace that suits you, working alongside your surgeon, specialist or GP wherever they are involved. Whatever your age or starting point, you are welcome here.</p>
     </div>
-    <div class="phero-photo"><picture><source srcset="images/d24131a2091dd6b9.webp" type="image/webp"><img src="images/d24131a2091dd6b9.jpg" alt="A SPORTS CLINICAL practitioner assessing a standing patient's lower limb during a rehabilitation session"></picture></div>
+    <div class="phero-photo"><picture><source srcset="images/51623653acab6d0e.webp 800w, images/eac6ee171ea9981e.webp 1200w, images/b661e4c9a585a6b8.webp 1600w, images/d24131a2091dd6b9.webp 2048w" sizes="(max-width: 900px) 100vw, 48vw" type="image/webp"><img src="images/d24131a2091dd6b9.jpg" srcset="images/485dc76317cbd843.jpg 800w, images/0f53cb1e716efdad.jpg 1200w, images/26e98d93292b8ab6.jpg 1600w, images/d24131a2091dd6b9.jpg 2048w" sizes="(max-width: 900px) 100vw, 48vw" alt="A SPORTS CLINICAL practitioner assessing a standing patient's lower limb during a rehabilitation session"></picture></div>
   </div>
   <div class="gold-base"></div>
 </header>
@@ -361,7 +445,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
   <div class="wrap">
     <div class="bio-grid">
       <div>
-        <span class="eyebrow">Understanding it</span>
+        <span class="eyebrow eb-light">Understanding it</span>
         <h2 style="margin:14px 0 18px;font-size:clamp(24px,3vw,32px);font-weight:600">Getting you back to what you do</h2>
         <p>Recovery rarely happens all on its own. After an injury, an operation, or a period of doing less, the body tends to lose a little strength, movement and confidence, and it can be hard to know how much to do, or when. Rehabilitation is simply the structured, step-by-step process of rebuilding what was lost, safely and at the right pace, so that everyday life becomes easier again.</p>
         <p>People come to us at every stage of recovery: after surgery such as a joint replacement or repair, after a sports injury, a fracture or a sprain, after illness, or after a long spell of being less active than usual. Rehabilitation works across the whole body: rebuilding muscle strength, restoring joint movement and control, steadying balance, and growing the confidence to move freely again. Everything begins with an unhurried assessment of where you are now and where you would like to get back to, and care is shaped gently around you, in step with your surgeon, specialist or GP wherever they are part of your recovery.</p>
@@ -378,7 +462,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="expect">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What to expect</span>
+      <span class="eyebrow eb-light">What to expect</span>
       <h2>From first call to feeling better</h2>
     </div>
     <div class="expect-grid">
@@ -409,7 +493,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="route" style="background:#fff;padding:78px 0">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">The right care for this</span>
+      <span class="eyebrow eb-light">The right care for this</span>
       <h2>Where this usually leads</h2>
     </div>
     <div class="bio-grid">
@@ -429,7 +513,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 
 <section class="creds" style="background:var(--ivory)">
   <div class="wrap">
-    <span class="eyebrow">Reassurance</span>
+    <span class="eyebrow eb-light">Reassurance</span>
     <h2 style="margin:14px 0 18px;font-size:26px;font-weight:600">Safe, gentle, and at your pace</h2>
     <p>Everything is done with care and at a pace that suits you, and nothing is rushed or forced. The aim throughout is simple: that you feel in good hands, understood, and steadily better.</p>
   </div>
@@ -438,7 +522,7 @@ Do not port an old page's rule; see handover, dead-CSS lesson. */
 <section class="svc">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What we help with</span>
+      <span class="eyebrow eb-light">What we help with</span>
       <h2>Other reasons people come to us</h2>
     </div>
     <p style="max-width:720px;font-weight:300;font-size:17.5px;margin-bottom:10px">Recovery and rehabilitation is one of the reasons people come to us; if what you are dealing with looks a little different, one of these may fit better.</p>

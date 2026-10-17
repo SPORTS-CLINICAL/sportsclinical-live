@@ -32,8 +32,10 @@
   "@type": "MedicalClinic",
   "@id": "https://www.sportsclinical.co.uk/#clinic",
   "name": "SPORTS CLINICAL",
-  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
+  "description": "Multidisciplinary clinic in Bassingham, near Lincoln, providing sports therapy, clinical remedial and sports massage, rehabilitation, pain and injury care, lifestyle medicine and medical acupuncture.",
   "url": "https://www.sportsclinical.co.uk",
+  "logo": "https://www.sportsclinical.co.uk/apple-touch-icon.png",
+  "image": "https://www.sportsclinical.co.uk/og-image.jpg",
   "telephone": "+44 7773 814488",
   "email": "info@sportsclinical.co.uk",
   "address": {
@@ -44,6 +46,12 @@
     "postalCode": "LN5 9HF",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.126642,
+    "longitude": -0.636987
+  },
+  "hasMap": "https://www.google.com/maps?q=53.126642,-0.636987",
   "areaServed": [
     "Lincoln",
     "Newark",
@@ -54,6 +62,82 @@
     "Nottinghamshire",
     "East Midlands"
   ],
+  "sameAs": [
+    "https://www.facebook.com/sportsclinical/",
+    "https://www.instagram.com/sports_clinical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Sports Therapy",
+          "url": "https://www.sportsclinical.co.uk/advanced-sports-therapy"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clinical Remedial Massage",
+          "url": "https://www.sportsclinical.co.uk/clinical-remedial-massage",
+          "description": "Clinical remedial massage and sports massage: skilled, therapeutic massage to ease pain, restore balance and support recovery.",
+          "alternateName": "Sports Massage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pain & Injury Support",
+          "url": "https://www.sportsclinical.co.uk/pain-and-injury-support"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Movement & Mobility Care",
+          "url": "https://www.sportsclinical.co.uk/movement-and-mobility-care"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Rehabilitation",
+          "url": "https://www.sportsclinical.co.uk/integrated-rehabilitation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance & Wellbeing",
+          "url": "https://www.sportsclinical.co.uk/performance-and-wellbeing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Integrated Lifestyle Medicine",
+          "url": "https://www.sportsclinical.co.uk/integrated-lifestyle-medicine"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medical Acupuncture",
+          "url": "https://www.sportsclinical.co.uk/medical-acupuncture"
+        }
+      }
+    ]
+  },
   "slogan": "Integrated care for movement, function and wellbeing at every stage of life"
 }
 </script>
@@ -249,7 +333,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   .mq-item{padding:0 16px;gap:8px}
   .mq-tile{height:64px;min-width:72px;padding:7px 10px}
   .mq-tile img{height:46px;max-width:130px}
-  .mq-name{font-size:11px;max-width:150px;min-height:50px}
+  .mq-name{font-size:12.5px;max-width:160px;min-height:56px}
 }
 
 /* RESTORE REGULATE OPTIMISE explainer */
@@ -273,7 +357,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 
 /* wide-screen hero fix: portrait photo shown in full (contain) on very wide viewports, v1_0f */
 @media(min-width:1600px){.phero-photo img{object-fit:contain;object-position:center}}
-</style>
+.eyebrow.eb-light{color:var(--navy)}.eyebrow.eb-light::after{content:'';display:block;width:36px;height:2px;background:var(--gold);margin-top:10px}.privacy .eyebrow.eb-light::after{margin-left:auto;margin-right:auto}</style>
 </head>
 <body>
 <nav aria-label="Main">
@@ -346,7 +430,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
       <h1>Care to keep you moving freely, at any age</h1>
       <p class="role">Whether stiffness has crept in gradually or movement has never quite felt right, we help you understand why, and build a plan to move more freely.</p>
     </div>
-    <div class="phero-photo"><picture><source srcset="images/0f748d35e6593f3d.webp" type="image/webp"><img src="images/0f748d35e6593f3d.jpg" alt="Movement and Mobility Care rehabilitation exercise at SPORTS CLINICAL"></picture></div>
+    <div class="phero-photo"><picture><source srcset="images/e633578b36099bfe.webp 800w, images/719dd944addf746e.webp 1200w, images/c35f87f809a91171.webp 1600w, images/0f748d35e6593f3d.webp 2048w" sizes="(max-width: 900px) 100vw, 48vw" type="image/webp"><img src="images/0f748d35e6593f3d.jpg" srcset="images/1e1e0b1443a185e8.jpg 800w, images/40a0c1bdab116109.jpg 1200w, images/3c3a87a10b4f3d0d.jpg 1600w, images/0f748d35e6593f3d.jpg 2048w" sizes="(max-width: 900px) 100vw, 48vw" alt="Movement and Mobility Care rehabilitation exercise at SPORTS CLINICAL"></picture></div>
   </div>
   <div class="gold-base"></div>
 </header>
@@ -355,7 +439,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
   <div class="wrap">
     <div class="bio-grid">
       <div>
-        <span class="eyebrow">What it's for</span>
+        <span class="eyebrow eb-light">What it's for</span>
         <h2 style="margin:14px 0 18px;font-size:clamp(24px,3vw,32px);font-weight:600">For stiffness, restriction, and movement that isn't what it was</h2>
         <p>Movement &amp; Mobility Care is for anyone whose movement has become restricted, stiff or simply not what it used to be, regardless of age or ability. It might be a joint that has lost its range, a back that doesn't move as freely as it should, or a general sense that things are seizing up. Whatever the cause, the aim is to find out why, and help you move more freely and comfortably again.</p>
         <p>We start with a careful assessment of how you actually move, not just where you feel restricted. Treatment and exercise are then built around that, matched to your body and your daily life, and adjusted as your movement improves.</p>
@@ -372,7 +456,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 <section class="expect">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What to expect</span>
+      <span class="eyebrow eb-light">What to expect</span>
       <h2>What Movement &amp; Mobility Care involves</h2>
     </div>
     <div class="expect-grid">
@@ -402,7 +486,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 
 <section class="creds" style="background:var(--ivory)">
   <div class="wrap">
-    <span class="eyebrow">Reassurance</span>
+    <span class="eyebrow eb-light">Reassurance</span>
     <h2 style="margin:14px 0 18px;font-size:26px;font-weight:600">Safe, gentle, and at your pace</h2>
     <p>Everything is done with care and at a pace that suits you, and nothing is rushed or forced. The aim throughout is simple: that you feel in good hands, understood, and steadily better.</p>
   </div>
@@ -411,7 +495,7 @@ footer{background:var(--navy-footer);color:var(--lightgrey);padding:56px 0 40px;
 <section class="svc">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">How we help</span>
+      <span class="eyebrow eb-light">How we help</span>
       <h2>Part of a wider range of connected care</h2>
     </div>
     <p style="max-width:720px;font-weight:300;font-size:17.5px;margin-bottom:10px">Movement &amp; Mobility Care is one of eight connected services, matched to you rather than delivered from a fixed menu.</p>
